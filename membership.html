@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Membership — APEX FITNESS</title>
+<meta name="description" content="Compare the Basic, Premium and Elite membership plans at APEX FITNESS, a fictional premium gym demo.">
+<meta name="theme-color" content="#090B0D">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="membership">
+<a class="skip-link" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<section class="page-hero"><div class="container"><p class="eyebrow">APEX FITNESS</p><h1>Invest in your potential.</h1><p>Choose the membership that matches your ambitions and training lifestyle.</p></div></section>
+<section class="section"><div class="container"><div id="plans" class="plans"></div>
+ <div id="summary" class="summary" hidden aria-live="polite"><div><p class="eyebrow">Your selection</p><h3 data-name></h3><p class="muted" data-price></p><ul data-feats></ul></div><a class="btn btn--solid" href="contact.html">Send membership inquiry</a></div>
+ <p class="muted small" style="margin-top:20px">Fictional demonstration prices. No payment is processed.</p></div></section>
+<section class="section section--alt"><div class="container"><h2 class="reveal" style="margin-bottom:36px">Compare plans</h2><div id="compare" class="compare reveal"></div></div></section>
+<section class="section"><div class="container"><h2 class="reveal" style="margin-bottom:36px">Questions</h2><div class="faq"><div class="faq__item"><h3 style="font:inherit;text-transform:none"><button class="faq__q" aria-expanded="false" aria-controls="fa0">Are these real prices?</button></h3><div class="faq__a" id="fa0" hidden>No. APEX FITNESS is a fictional demonstration project, so all prices and offers are placeholders.</div></div><div class="faq__item"><h3 style="font:inherit;text-transform:none"><button class="faq__q" aria-expanded="false" aria-controls="fa1">Can I pay online?</button></h3><div class="faq__a" id="fa1" hidden>No payment processing is implemented. Choosing a plan leads to an inquiry form.</div></div><div class="faq__item"><h3 style="font:inherit;text-transform:none"><button class="faq__q" aria-expanded="false" aria-controls="fa2">Can I change plans later?</button></h3><div class="faq__a" id="fa2" hidden>In this demo concept, yes — plan changes would be handled through the club team.</div></div><div class="faq__item"><h3 style="font:inherit;text-transform:none"><button class="faq__q" aria-expanded="false" aria-controls="fa3">What does the fitness assessment include?</button></h3><div class="faq__a" id="fa3" hidden>A short introductory session covering goals, movement and a suggested training approach.</div></div></div></div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/config.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/membership.js" defer></script>
+</body>
+</html>

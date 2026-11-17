@@ -1,0 +1,17 @@
+/* APEX FITNESS — responsive layouts (desktop-first). Tested widths targeted: 1920/1440/1024/768/390/360 */
+@media (min-width:1700px){.container{max-width:1560px}}
+@media (max-width:1100px){.grid4{grid-template-columns:repeat(2,1fr)}.footer__grid{grid-template-columns:1fr 1fr}.nav{gap:20px}.nav__links{gap:18px}}
+@media (max-width:900px){
+  .nav__toggle{display:block}.nav__cta{display:none}
+  .nav__links{position:fixed;inset:76px 0 auto;flex-direction:column;gap:0;background:var(--bg);padding:12px var(--pad) 28px;border-bottom:1px solid var(--line);transform:translateY(-130%);visibility:hidden;transition:transform .4s,visibility .4s}
+  .menu-open .nav__links{transform:none;visibility:visible}.nav__links a{font-size:1rem;padding:16px 0;border-bottom:1px solid var(--line)}
+  .split,.split--rev,.contact{grid-template-columns:1fr}.split--rev>:first-child{order:0}.frame::before{inset:12px -8px -12px 8px}
+  .grid3,.plans,.values{grid-template-columns:1fr}.plan{padding:30px 24px}
+  .editorial figure:nth-child(n){grid-column:span 12;aspect-ratio:16/10;margin-top:0}.tcard--down{margin-top:0}
+  .modal__box{grid-template-columns:1fr}.modal__img{min-height:200px;max-height:260px}.summary{grid-template-columns:1fr}.scroll-cue{display:none}
+}
+@media (max-width:600px){
+  .hero{padding:120px 0 64px}.hero .btn-row .btn,.cta .btn{width:100%;justify-content:center}.grid4{grid-template-columns:1fr}.stats{grid-template-columns:1fr}
+  .stats div{display:flex;align-items:baseline;gap:14px}.footer__grid{grid-template-columns:1fr}.search{min-width:0;width:100%}.toolbar{display:block}.toolbar .filters{margin-bottom:16px}
+  .page-hero{padding:140px 0 48px}.result dl{grid-template-columns:1fr}.modal__body{padding:24px}.field input,.field textarea{font-size:16px}
+}
